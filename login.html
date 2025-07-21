@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="groove.css">
+    <script src="groove.js"></script>
+</head>
+<body> 
+    <div class="logo">
+        <img src="IMAGES/Logo image.png.jpeg">
+    <h3 class="old" style="color: antiquewhite;font-style: inherit;"> <br></h3>                        
+           
+      
+    </div>
+    
+    <nav>
+        <ul> 
+           
+            <div class="hamburger"id="hamburger"><img src="ICONS/download.png" ></div>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="#contactus">Contact us</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+   <div class="container">
+
+    <form id="loginform">
+        <h1>Login Here</h1>
+        <input type="text" id="loginusername" placeholder="enter your username">
+        <input type="password" id="loginpassword" placeholder="enter your password">
+        <button type="button" onclick="submitlogin()">login</button>
+        <p class="link">Dont have an account? <a href="#" onclick="showSignup()">signup</a></p>
+    </form>
+
+    <form id="signup" class="hidden">
+        <h2>signup here</h2>
+        <input type="text" id="signupname" placeholder="enter your name">
+        <input type="text" id="signupemail" placeholder="enter your email">
+        <input type="password" id="signuppassword" placeholder="set password">
+        <input type="password" id="signupconfirmpassword" placeholder="comfirm password">
+        <button type="button" onclick="createaccount()">create account</button>
+        <p>already have an account?<a href="#" onclick="showLogin()">Login</a></p> <br>
+    </form> 
+</body>
+</html>
